@@ -1,4 +1,11 @@
 //Colors
+$primary : #01BAEF;
+$secondary: #B80C09;
+$accent:#FBFBFF;
+$dark: #040F16;
+$mid: #0B4F6C;
 
-$primary : #1976D3;
-$secondary: #f43f33;
+@import "components/header";
+@import "components/footer";
+@import "buttons";
+

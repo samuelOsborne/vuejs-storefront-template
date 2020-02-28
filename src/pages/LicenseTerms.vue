@@ -1,11 +1,10 @@
 <template>
-    <div>
-    </div>
+    <div></div>
 </template>
 
 <script>
     export default {
-        name: "Footer"
+        name: "LicenseTerms"
     }
 </script>
 
