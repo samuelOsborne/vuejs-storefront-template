@@ -1,30 +1,23 @@
 <template>
-    <div>
-        <div class="sticky-navbar">
+    <div class="sticky-navbar">
+        <b-navbar toggleable="lg" style="z-index: 1020">
             <b-container>
-                <b-navbar toggleable="lg" sticky>
-                    <b-navbar-brand>
-                        <router-link :to="{ name: 'home' }" class="link-button">
-                            Logo
-                        </router-link>
-                    </b-navbar-brand>
-                    <!--                    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>-->
-                    <!--                    <b-collapse id="nav-collapse" is-nav>-->
-                    <b-navbar-nav class="ml-auto">
-                        <b-nav-item class="link-button hide-navbar-items" :to="{ name: 'about' }">
-                            About
-                        </b-nav-item>
-                        <b-nav-item class="link-button hide-navbar-items" :to="{ name: '' }">
-                            Services
-                        </b-nav-item>
-                        <b-nav-item class="link-button" >
-                            <span style="font-size:25px;cursor:pointer;line-height: normal;" v-on:click="fullPageMenu">&#9776;</span>
-                        </b-nav-item>
-                    </b-navbar-nav>
-                    <!--                    </b-collapse>-->
-                </b-navbar>
+                <b-navbar-brand :to="{ name: 'home' }" class="navbar-logo">
+                    <img src="../../assets/placeholder-logo.svg" />
+                </b-navbar-brand>
+                <b-navbar-nav class="ml-auto">
+                    <b-nav-item class="link-button hide-navbar-items" :to="{ name: 'about' }">
+                        About
+                    </b-nav-item>
+                    <b-nav-item class="link-button hide-navbar-items" :to="{ name: '' }">
+                        Services
+                    </b-nav-item>
+                    <b-nav-item class="link-button" >
+                        <span style="font-size:25px;cursor:pointer;line-height: normal;" v-on:click="fullPageMenu">&#9776;</span>
+                    </b-nav-item>
+                </b-navbar-nav>
             </b-container>
-        </div>
+        </b-navbar>
 
         <div class="full-page-overlay" v-bind:class="{ 'show-overlay': this.isActive }">
             <div class="overlay-content">
@@ -69,7 +62,6 @@
         },
         methods: {
             fullPageMenu: function () {
-                console.log(this.isActive);
                 this.isActive = !this.isActive;
             }
         }
