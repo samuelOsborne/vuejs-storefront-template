@@ -9,3 +9,10 @@ $mid: #0B4F6C;
 @import "components/footer";
 @import "buttons";
 
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
