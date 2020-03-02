@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="navbar-bg">
+        <div class="sticky-navbar">
             <b-container>
                 <b-navbar toggleable="lg" sticky>
                     <b-navbar-brand>
@@ -18,7 +18,7 @@
                             Services
                         </b-nav-item>
                         <b-nav-item class="link-button" >
-                            <span style="font-size:25px;cursor:pointer;line-height: normal" v-on:click="fullPageMenu">&#9776;</span>
+                            <span style="font-size:25px;cursor:pointer;line-height: normal;" v-on:click="fullPageMenu">&#9776;</span>
                         </b-nav-item>
                     </b-navbar-nav>
                     <!--                    </b-collapse>-->
@@ -26,8 +26,7 @@
             </b-container>
         </div>
 
-        <div class="full-page-overlay" v-bind:class="{ 'show-overlay': this.isActive }" style="width: 0;">
-            <a href="javascript:void(0)" class="closebtn" v-on:click="fullPageMenu">&times;</a>
+        <div class="full-page-overlay" v-bind:class="{ 'show-overlay': this.isActive }">
             <div class="overlay-content">
                 <b-list-group>
                     <router-link :to=" {} ">
