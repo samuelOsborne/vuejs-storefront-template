@@ -1,19 +1,26 @@
 <template>
     <div class="sticky-navbar">
-        <b-navbar toggleable="lg" style="z-index: 1020">
-            <b-container>
+        <b-navbar style="z-index: 1020">
+            <b-container style="z-index: 1020">
                 <b-navbar-brand :to="{ name: 'home' }" class="navbar-logo">
                     <img src="../../assets/placeholder-logo.svg" />
                 </b-navbar-brand>
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-item class="link-button hide-navbar-items" :to="{ name: 'about' }">
+                    <b-nav-item class="hide-navbar-items align-link-center" :to="{ name: 'about' }" link-classes="link-button">
                         About
                     </b-nav-item>
-                    <b-nav-item class="link-button hide-navbar-items" :to="{ name: '' }">
+                    <b-nav-item class="hide-navbar-items align-link-center" :to="{ name: '' }" link-classes="link-button">
                         Services
                     </b-nav-item>
-                    <b-nav-item class="link-button" >
-                        <span style="font-size:25px;cursor:pointer;line-height: normal;" v-on:click="fullPageMenu">&#9776;</span>
+                    <b-nav-item>
+                        <button class="hamburger hamburger--spin" type="button" v-on:click="fullPageMenu"
+                                v-bind:class="{ 'active': this.isActive }">
+                            <div class="inner">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </button>
                     </b-nav-item>
                 </b-navbar-nav>
             </b-container>
@@ -22,24 +29,24 @@
         <div class="full-page-overlay" v-bind:class="{ 'show-overlay': this.isActive }">
             <div class="overlay-content">
                 <b-list-group>
-                    <router-link :to=" {} ">
+                    <router-link :to="{}" class="link-button">
                         Home
                     </router-link>
-                    <router-link :to=" {} ">
+                    <router-link :to="{}" class="link-button">
                         link
                     </router-link>
-                    <router-link :to=" {} ">
+                    <router-link :to="{}" class="link-button">
                         link
                     </router-link>
                 </b-list-group>
                 <b-row>
                     <b-col>
-                        <router-link :to=" {} ">
+                        <router-link :to="{}" class="link-button">
                             link
                         </router-link>
                     </b-col>
                     <b-col>
-                        <router-link :to=" {} ">
+                        <router-link :to="{}" class="link-button">
                             link
                         </router-link>
                     </b-col>
@@ -97,6 +104,6 @@
     // }
 </script>
 
-<style scoped>
+<style>
 
 </style>

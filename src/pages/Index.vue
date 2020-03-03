@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="spacer">
     <b-container>
         Main page (Index.vue)
       <br>

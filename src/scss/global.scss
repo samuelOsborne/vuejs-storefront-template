@@ -1,18 +1,25 @@
 //Colors
 $primary : #fff;
-$secondary: #B80C09;
-$accent:#FBFBFF;
-$dark: #040F16;
-$mid: #0B4F6C;
+$secondary: #5C59FF;
+$accent:#46E898;
+$dark: #3c3c3c;
+$bright: #FFEE4D;
+
+$hamburger-size: 30px;
 
 @import "components/header";
 @import "components/footer";
 @import "buttons";
+@import "~delicious-hamburgers/scss/hamburgers";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+}
+
+.spacer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }

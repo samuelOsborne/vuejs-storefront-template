@@ -34,12 +34,12 @@
     padding: 8px;
     text-decoration: none;
     //font-size: 36px;
-    color: #818181;
+    color: $secondary;
     display: block;
   }
 
   a:hover, a:focus {
-    color: #f1f1f1;
+    color: $accent;
   }
 
   .closebtn {
@@ -69,6 +69,6 @@
 
 .hide-navbar-items {
   @media (max-width: 992px) {
-    display: none;
+    display: none !important;
   }
 }

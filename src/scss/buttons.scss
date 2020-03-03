@@ -1,9 +1,21 @@
 .link-button {
   text-decoration: none;
-  color: $secondary;
+  color: $secondary !important;
+  padding: 0;
+}
+
+.footer-link-button {
+  @extend .link-button;
+  color: $primary !important;
 }
 
 .link-button:hover {
-  text-decoration: none;
-  color: $accent;
+  text-decoration: underline;
+  color: $accent !important;
+}
+
+.align-link-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,4 +1,13 @@
 .footer {
   padding: 30px;
-  background-color: $dark;
+  background-color: $secondary;
+  color: #f1f1f1;
+
+  a {
+    color: #f1f1f1;
+  }
+
+  a:hover {
+    color: $accent;
+  }
 }
