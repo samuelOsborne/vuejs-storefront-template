@@ -1,0 +1,34 @@
+$background-shadow-tiny: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$background-shadow-small: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$background-shadow-medium: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$background-shadow-heavy: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$background-shadow-heaviest: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+.background-shadow-tiny {
+  box-shadow: $background-shadow-tiny;
+}
+
+.background-shadow-small {
+  box-shadow: $background-shadow-small;
+}
+
+.background-shadow-medium {
+  box-shadow: $background-shadow-medium;
+}
+
+.background-shadow-heavy {
+  box-shadow: $background-shadow-heavy;
+}
+
+.background-shadow-heaviest {
+  box-shadow: $background-shadow-heaviest;
+}
+
+.background-shadow-small-to-heavy {
+  box-shadow: $background-shadow-small;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.background-shadow-small-to-heavy:hover {
+  box-shadow: $background-shadow-heavy;
+}

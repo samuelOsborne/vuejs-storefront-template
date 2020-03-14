@@ -7,19 +7,20 @@ $bright: #FFEE4D;
 
 $hamburger-size: 30px;
 
+@import "variables/shadows";
 @import "components/header";
 @import "components/footer";
+@import "components/overlay";
+@import "components/card";
 @import "buttons";
 @import "~delicious-hamburgers/scss/hamburgers";
+
+@import "pages/index";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-}
-
-.spacer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  font-weight: 300;
 }

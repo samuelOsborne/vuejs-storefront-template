@@ -5,105 +5,53 @@
                 <b-navbar-brand :to="{ name: 'home' }" class="navbar-logo">
                     <img src="../../assets/placeholder-logo.svg" />
                 </b-navbar-brand>
-                <b-navbar-nav class="ml-auto">
-                    <b-nav-item class="hide-navbar-items align-link-center" :to="{ name: 'about' }" link-classes="link-button">
-                        About
-                    </b-nav-item>
-                    <b-nav-item class="hide-navbar-items align-link-center" :to="{ name: '' }" link-classes="link-button">
-                        Services
-                    </b-nav-item>
-                    <b-nav-item>
-                        <button class="hamburger hamburger--spin" type="button" v-on:click="fullPageMenu"
-                                v-bind:class="{ 'active': this.isActive }">
-                            <div class="inner">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                        </button>
-                    </b-nav-item>
-                </b-navbar-nav>
+                <slot>
+                    <b-navbar-nav class="ml-auto">
+                        <b-nav-item class="hide-navbar-items align-link-center" :to="{ name: 'about' }" link-classes="link-button">
+                            About
+                        </b-nav-item>
+                        <b-nav-item class="hide-navbar-items align-link-center" :to="{ name: '' }" link-classes="link-button">
+                            Services
+                        </b-nav-item>
+                        <b-nav-item>
+                            <button class="hamburger hamburger--spin" type="button" v-on:click="fullPageMenu"
+                                    v-bind:class="{ 'active': isOverlayActive }">
+                                <div class="inner">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </div>
+                            </button>
+                        </b-nav-item>
+                    </b-navbar-nav>
+                </slot>
             </b-container>
         </b-navbar>
-
-        <div class="full-page-overlay" v-bind:class="{ 'show-overlay': this.isActive }">
-            <div class="overlay-content">
-                <b-list-group>
-                    <router-link :to="{}" class="link-button">
-                        Home
-                    </router-link>
-                    <router-link :to="{}" class="link-button">
-                        link
-                    </router-link>
-                    <router-link :to="{}" class="link-button">
-                        link
-                    </router-link>
-                </b-list-group>
-                <b-row>
-                    <b-col>
-                        <router-link :to="{}" class="link-button">
-                            link
-                        </router-link>
-                    </b-col>
-                    <b-col>
-                        <router-link :to="{}" class="link-button">
-                            link
-                        </router-link>
-                    </b-col>
-                </b-row>
-            </div>
-        </div>
+        <Overlay>
+        </Overlay>
     </div>
 </template>
 
 <script>
+    import Overlay from "../Overlay/Overlay";
+    import {mutations, store} from "../../store";
+
     export default {
         name: 'app',
-        components: {},
-        data : function() {
-            return (
-                {
-                    isActive: false
-                }
-            )
+        components: {
+            Overlay
         },
+
+        computed: {
+            isOverlayActive() {
+                return store.isOverlayOpen
+            }
+        },
+
         methods: {
             fullPageMenu: function () {
-                this.isActive = !this.isActive;
+                mutations.toggleOverlay()
             }
         }
     }
-    // import Lottie from "vue-lottie";
-    // import * as animationData from '../../assets/animations/9789-burger-menu.json';
-    //
-    // export default {
-    //     name: "Header",
-    //     components : {
-    //         'lottie': Lottie
-    //     },
-    //     data () {
-    //         return {
-    //             defaultOptions: {animationData: animationData},
-    //             // isActive: true,
-    //             animationSpeed: 1,
-    //             // loop: false,
-    //             // autoplay: true
-    //         }
-    //     },
-    //     methods: {
-    //         unfold: function () {
-    //             this.isActive = !this.isActive;
-    //         },
-    //         handleAnimation: function (anim) {
-    //           this.anim = anim;
-    //         },
-    //         play: function () {
-    //             this.anim.play();
-    //         }
-    //     }
-    // }
 </script>
-
-<style>
-
-</style>

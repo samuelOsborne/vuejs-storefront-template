@@ -1,0 +1,21 @@
+.presentation-card {
+  border: $primary;
+
+  .presentation-card-image {
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.card-body {
+  text-align: left;
+  border: none;
+}
+
+.card-img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 25%;
+}
