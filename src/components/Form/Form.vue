@@ -1,5 +1,5 @@
 <template>
-    <div class="background-shadow-heaviest" style="padding: 10px">
+    <div class="background-shadow-small form">
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
             <b-form-group
                     id="input-group-1"

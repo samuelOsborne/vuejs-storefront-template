@@ -4,6 +4,7 @@ $hamburger-size: 30px;
 @import "variables/shadows";
 @import "components/buttons";
 @import "components/header";
+@import "components/form";
 @import "components/footer";
 @import "components/overlay";
 @import "components/card";
@@ -17,4 +18,20 @@ $hamburger-size: 30px;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-weight: 300;
+}
+
+.grey-section {
+  background-color: $gray-200;
+  position: relative;
+  display: grid;
+}
+
+.grey-section:before {
+  content:"";
+  background-color: $gray-200;
+  position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
 }

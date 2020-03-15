@@ -21,86 +21,89 @@
                     </b-card>
                 </b-col>
             </b-row>
-            <b-row class="">
-                <b-card-group deck>
-                    <b-card class="background-shadow-small-to-heavy"
-                            img-alt="Image"
-                            img-top
-                            body-class="card-body">
-                        <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
-                        <b-card-title>Title</b-card-title>
-                        <b-card-text>
-                            A pseudo-Latin text used in web design, layout,
-                            and printing in place of things to emphasise design for previewing layouts.
-                        </b-card-text>
-                    </b-card>
+            <b-col class="grey-section pt-5 pb-5">
+                <b-row>
+                    <b-card-group deck>
+                        <b-card class="background-shadow-small-to-heavy"
+                                img-alt="Image"
+                                img-top
+                                body-class="card-body">
+                            <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
+                            <b-card-title>Title</b-card-title>
+                            <b-card-text>
+                                A pseudo-Latin text used in web design, layout,
+                                and printing in place of things to emphasise design for previewing layouts.
+                            </b-card-text>
+                        </b-card>
 
-                    <b-card class="background-shadow-small-to-heavy"
-                            img-alt="Image"
-                            img-top
-                            body-class="card-body">
-                        <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
-                        <b-card-title>Title</b-card-title>
-                        <b-card-text>
-                            A pseudo-Latin text used in web design, layout,
-                            and printing in place of things to emphasise design for previewing layouts.
-                        </b-card-text>
-                    </b-card>
+                        <b-card class="background-shadow-small-to-heavy"
+                                img-alt="Image"
+                                img-top
+                                body-class="card-body">
+                            <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
+                            <b-card-title>Title</b-card-title>
+                            <b-card-text>
+                                A pseudo-Latin text used in web design, layout,
+                                and printing in place of things to emphasise design for previewing layouts.
+                            </b-card-text>
+                        </b-card>
 
-                    <b-card class="background-shadow-small-to-heavy"
-                            img-alt="Image"
-                            img-top
-                            body-class="card-body">
-                        <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
-                        <b-card-title>Title</b-card-title>
-                        <b-card-text>
-                            A pseudo-Latin text used in web design, layout,
-                            and printing in place of things to emphasise design for previewing layouts.
-                        </b-card-text>
-                    </b-card>
-                </b-card-group>
-            </b-row>
+                        <b-card class="background-shadow-small-to-heavy"
+                                img-alt="Image"
+                                img-top
+                                body-class="card-body">
+                            <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
+                            <b-card-title>Title</b-card-title>
+                            <b-card-text>
+                                A pseudo-Latin text used in web design, layout,
+                                and printing in place of things to emphasise design for previewing layouts.
+                            </b-card-text>
+                        </b-card>
+                    </b-card-group>
+                </b-row>
 
-            <b-row class="pt-5 pb-5">
-                <b-card-group deck>
-                    <b-card class="background-shadow-small-to-heavy"
-                            img-alt="Image"
-                            img-top
-                            body-class="card-body">
-                        <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
-                        <b-card-title>Title</b-card-title>
-                        <b-card-text>
-                            A pseudo-Latin text used in web design, layout,
-                            and printing in place of things to emphasise design for previewing layouts.
-                        </b-card-text>
-                    </b-card>
+                <b-row class="pt-5">
+                    <b-card-group deck>
+                        <b-card class="background-shadow-small-to-heavy"
+                                img-alt="Image"
+                                img-top
+                                body-class="card-body">
+                            <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
+                            <b-card-title>Title</b-card-title>
+                            <b-card-text>
+                                A pseudo-Latin text used in web design, layout,
+                                and printing in place of things to emphasise design for previewing layouts.
+                            </b-card-text>
+                        </b-card>
 
-                    <b-card class="background-shadow-small-to-heavy"
-                            img-alt="Image"
-                            img-top
-                            body-class="card-body">
-                        <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
-                        <b-card-title>Title</b-card-title>
-                        <b-card-text>
-                            A pseudo-Latin text used in web design, layout,
-                            and printing in place of things to emphasise design for previewing layouts.
-                        </b-card-text>
-                    </b-card>
+                        <b-card class="background-shadow-small-to-heavy"
+                                img-alt="Image"
+                                img-top
+                                body-class="card-body">
+                            <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
+                            <b-card-title>Title</b-card-title>
+                            <b-card-text>
+                                A pseudo-Latin text used in web design, layout,
+                                and printing in place of things to emphasise design for previewing layouts.
+                            </b-card-text>
+                        </b-card>
 
-                    <b-card class="background-shadow-small-to-heavy"
-                            img-alt="Image"
-                            img-top
-                            body-class="card-body">
-                        <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
-                        <b-card-title>Title</b-card-title>
-                        <b-card-text>
-                            A pseudo-Latin text used in web design, layout,
-                            and printing in place of things to emphasise design for previewing layouts.
-                        </b-card-text>
-                    </b-card>
-                </b-card-group>
-            </b-row>
-            <b-col cols="10" class="mx-auto">
+                        <b-card class="background-shadow-small-to-heavy"
+                                img-alt="Image"
+                                img-top
+                                body-class="card-body">
+                            <b-card-img src="../assets/icons/construction.svg" class="card-img"/>
+                            <b-card-title>Title</b-card-title>
+                            <b-card-text>
+                                A pseudo-Latin text used in web design, layout,
+                                and printing in place of things to emphasise design for previewing layouts.
+                            </b-card-text>
+                        </b-card>
+                    </b-card-group>
+                </b-row>
+            </b-col>
+
+            <b-col cols="10" class="mx-auto pt-5 pb-5">
                 <Form>
                 </Form>
             </b-col>
