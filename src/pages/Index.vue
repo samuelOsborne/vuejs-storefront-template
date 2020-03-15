@@ -16,12 +16,12 @@
                 </b-col>
                 <b-col>
                     <b-card img-alt="Image" class="presentation-card">
-                        <div class="presentation-card-image background-shadow-small">
+                        <div class="presentation-card-image background-shadow-heaviest">
                         </div>
                     </b-card>
                 </b-col>
             </b-row>
-            <b-row>
+            <b-row class="">
                 <b-card-group deck>
                     <b-card class="background-shadow-small-to-heavy"
                             img-alt="Image"
@@ -100,20 +100,22 @@
                     </b-card>
                 </b-card-group>
             </b-row>
-            <Form>
-            </Form>
+            <b-col cols="10" class="mx-auto">
+                <Form>
+                </Form>
+            </b-col>
         </b-container>
     </div>
 </template>
 
 <script>
-    import Form from "../components/Form/Form";
+	import Form from "../components/Form/Form"
 
-    export default {
-        name: 'PageIndex',
+	export default {
+		name: 'PageIndex',
 
-        components: {
-            Form
-        }
-    }
+		components: {
+			Form
+		}
+	}
 </script>

@@ -10,6 +10,7 @@
   "dependencies": {
     "bootstrap-vue": "latest",
     "core-js": "^3.6.4",
+    "delicious-hamburgers": "^0.4.3",
     "vue": "^2.6.11",
     "vue-router": "latest"
   },
