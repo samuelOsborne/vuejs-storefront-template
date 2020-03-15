@@ -3,7 +3,7 @@
         <b-navbar style="z-index: 1020">
             <b-container style="z-index: 1020">
                 <b-navbar-brand :to="{ name: 'home' }" class="navbar-logo">
-                    <img src="../../assets/placeholder-logo.svg" />
+                    <img src="../../assets/placeholder-logo.svg" style="color: white"/>
                 </b-navbar-brand>
                 <slot>
                     <b-navbar-nav class="ml-auto">

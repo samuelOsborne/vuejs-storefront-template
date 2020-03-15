@@ -16,7 +16,7 @@
                 </b-col>
                 <b-col>
                     <b-card img-alt="Image" class="presentation-card">
-                        <div class="presentation-card-image background-shadow-heaviest">
+                        <div class="presentation-card-image background-shadow-small">
                         </div>
                     </b-card>
                 </b-col>
@@ -100,12 +100,20 @@
                     </b-card>
                 </b-card-group>
             </b-row>
+            <Form>
+            </Form>
         </b-container>
     </div>
 </template>
 
 <script>
+    import Form from "../components/Form/Form";
+
     export default {
         name: 'PageIndex',
+
+        components: {
+            Form
+        }
     }
 </script>

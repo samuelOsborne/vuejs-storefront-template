@@ -1,18 +1,12 @@
-//Colors
-$primary : #fff;
-$secondary: #5C59FF;
-$accent:#46E898;
-$dark: #3c3c3c;
-$bright: #FFEE4D;
-
 $hamburger-size: 30px;
 
+@import "variables/variables";
 @import "variables/shadows";
+@import "components/buttons";
 @import "components/header";
 @import "components/footer";
 @import "components/overlay";
 @import "components/card";
-@import "buttons";
 @import "~delicious-hamburgers/scss/hamburgers";
 
 @import "pages/index";
