@@ -21,7 +21,7 @@
                     </b-card>
                 </b-col>
             </b-row>
-            <b-row>
+            <b-row class="">
                 <b-card-group deck>
                     <b-card class="background-shadow-small-to-heavy"
                             img-alt="Image"
@@ -100,12 +100,22 @@
                     </b-card>
                 </b-card-group>
             </b-row>
+            <b-col cols="10" class="mx-auto">
+                <Form>
+                </Form>
+            </b-col>
         </b-container>
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'PageIndex',
-    }
+	import Form from "../components/Form/Form"
+
+	export default {
+		name: 'PageIndex',
+
+		components: {
+			Form
+		}
+	}
 </script>
