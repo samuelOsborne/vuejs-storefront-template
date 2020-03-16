@@ -1,12 +1,23 @@
 .presentation-card {
   border: $primary;
+}
 
-  .presentation-card-image {
-    padding-top: 50%;
-    padding-bottom: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.presentation-card-image {
+  width: 15rem;
+  height: 15rem;
+  background-color: #2bffc6;
+  border-radius: 15px;
+}
+
+.client-card {
+  width: 5rem;
+  height: 5rem;
+  background-color: $gray-500;
+  border-radius: 15px;
+  box-shadow: $background-shadow-small;
+  background-image: url('~@/assets/icons/construction.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card {

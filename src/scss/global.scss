@@ -27,11 +27,13 @@ $hamburger-size: 30px;
 }
 
 .grey-section:before {
-  content:"";
+  content: "";
   background-color: $gray-200;
   position: absolute;
   height: 100%;
-  width: 200vw;
-  left: -100vw;
+
+  //messes up overlay
+  //width: 200vw;
+  //left: -100vw;
   z-index: -1;
 }
