@@ -1,31 +1,41 @@
 <template>
     <div class="background-shadow-small form">
-        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+        <h2>
+            Contact us
+        </h2>
+        <b-form @submit="onSubmit" v-if="show">
             <b-form-group
                     id="input-group-1"
-                    label="Email address:"
-                    label-for="input-1"
             >
                 <b-form-input
                         id="input-1"
                         v-model="form.email"
                         type="email"
                         required
-                        placeholder="Enter email"
+                        placeholder="Name"
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+            <b-form-group id="input-group-2">
                 <b-form-input
                         id="input-2"
                         v-model="form.name"
                         required
-                        placeholder="Enter name"
+                        placeholder="Email"
                 ></b-form-input>
             </b-form-group>
 
+            <b-form-group id="input-group-3">
+                <b-form-textarea
+                        rows="10"
+                        id="input-3"
+                        v-model="form.text"
+                        required
+                        placeholder="What can we do for you?"
+                ></b-form-textarea>
+            </b-form-group>
+
             <b-button type="submit" variant="primary">Submit</b-button>
-            <b-button type="reset" variant="danger">Reset</b-button>
         </b-form>
     </div>
 </template>
@@ -39,6 +49,7 @@
 				form: {
 					email: '',
 					name: '',
+                    text: ''
 				},
 				show: true
 			}
@@ -53,6 +64,7 @@
 				// Reset our form values
 				this.form.email = '';
 				this.form.name = '';
+				this.form.text= '';
 				// Trick to reset/clear native browser form validation state
 				this.$nextTick(() => {
 					this.show = true

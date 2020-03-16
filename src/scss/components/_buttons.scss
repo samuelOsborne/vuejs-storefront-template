@@ -1,6 +1,6 @@
 .link-button {
   text-decoration: none;
-  color: $dark !important;
+  color: $primary !important;
   padding: 0;
 }
 
@@ -19,3 +19,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.btn-primary {
+  border-radius: 15px;
+  box-shadow: $background-shadow-small;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:hover {
+  box-shadow: $background-shadow-small;
+  background-color: $accent;
+  border-color: $accent;
+  opacity: 0.9;
+  transition: background-color 0.1s ease-in-out;
+ }
