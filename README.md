@@ -1,5 +1,7 @@
 # vuejs-storefront
 
+Before getting started, you can have a peak at what it looks like here : https://samuelosborne.github.io/vuejs-storefront-template/#/
+
 ## Project setup
 ```
 npm install
