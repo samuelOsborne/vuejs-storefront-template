@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: "/vuejs-storefront-template/",
     runtimeCompiler: true,
     chainWebpack: config => {
         config.module
