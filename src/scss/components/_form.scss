@@ -7,3 +7,8 @@
 	border: 1px solid $gray-500;
 	border-radius: 10px;
 }
+
+.form-control:focus{
+	border-color: $primary;
+	box-shadow: none;
+}

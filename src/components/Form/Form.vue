@@ -28,10 +28,12 @@
             <b-form-group id="input-group-3">
                 <b-form-textarea
                         rows="10"
+                        max-rows="15"
                         id="input-3"
                         v-model="form.text"
                         required
                         placeholder="What can we do for you?"
+                        style="overflow: hidden"
                 ></b-form-textarea>
             </b-form-group>
 
