@@ -4,13 +4,15 @@
             <b-row class="pb-5">
                 <b-col style="text-align: left">
                     <h1 class="font-weight-bold">
-                        The Future of Animation and Interactive Design is here.
+                        A simple template to get up & running with Vuejs quickly!
                     </h1>
                     <h4 class="pt-3">
-                        Lottie animations and the tools you need to test and perfect them. Simply edit and ship your animations in just a few clicks.
+                        A pseudo-Latin text used in web design, layout,
+                        and printing in place of things to emphasise design for previewing layouts.
                     </h4>
                     <p class="pt-3">
-                        Lottie libraries and plugins available for free Web, iOS, Android, Flutter, React Native, Xamarin, NativeScript, Windows, Vue, Angular, QT, Skia, Framer X, Sketch for free.
+                        A pseudo-Latin text used in web design, layout,
+                        and printing in place of things to emphasise design for previewing layouts.
                     </p>
                 </b-col>
                 <b-col>
